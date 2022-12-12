@@ -44,5 +44,17 @@ namespace CircularQueues
 
         }
 
+        public void remove()
+        {
+            /*Checks whether the queue is empty. */
+            if (FRONT == -1)
+            {
+                Console.WriteLine("Queue underflow");
+                return;
+            }
+            Console.WriteLine("\n The element deleted from the queue is: " + queue_array[FRONT] + "\n");
+            
+        }
+
     }
 }
